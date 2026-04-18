@@ -19,15 +19,12 @@ If a login is detected, an alert is sent through SNS to your email.
 
 
 
-## Implementation Steps
+Implementation Steps
 
 I first created an S3 bucket to store the CloudTrail logs. Then I enabled CloudTrail and set it to send logs to that bucket.
 
 After that, I created a Lambda function using Python. I connected the S3 bucket to the Lambda function using a trigger, so the function runs whenever a new log file is added.
-
 Inside the Lambda function, I wrote code to read and unzip the log files, then extract the data from them.
-
 I added logic to check for console login events, since they are important for security monitoring.
-
 Finally, I created an SNS topic and subscribed my email to it. I updated the Lambda function to send an alert through SNS whenever a login event is detected.
 
