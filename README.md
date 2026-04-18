@@ -5,6 +5,8 @@ I put this project together to build a proactive security monitoring tool on AWS
 
 
  
+
+ 
  Architecture
 
 This project uses an event driven setup:
@@ -16,6 +18,8 @@ These logs are stored in an S3 bucket.
 Whenever a new log file is added, S3 triggers a Lambda function.
 The Lambda function reads the logs and checks for console login events.
 If a login is detected, an alert is sent through SNS to your email.
+
+
 
 
 
