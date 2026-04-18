@@ -6,6 +6,7 @@ I put this project together to build a proactive security monitoring tool on AWS
  Architecture
 
 This project uses an event driven setup:
+
 CloudTrail → S3 → Lambda → SNS → Email
 
 CloudTrail records account activity and API calls.
