@@ -32,3 +32,12 @@ Inside the Lambda function, I wrote code to read and unzip the log files, then e
 I added logic to check for console login events, since they are important for security monitoring.
 Finally, I created an SNS topic and subscribed my email to it. I updated the Lambda function to send an alert through SNS whenever a login event is detected.
 
+
+
+
+Detection Logic
+
+The Lambda function checks each CloudTrail log file for specific events. In this project, it looks for ConsoleLogin events.
+When a login is detected, the system extracts useful details such as the username, IP address, region, and whether MFA was used.
+This helps to monitor account access and can be useful for identifying unusual or unauthorized login activity.
+
