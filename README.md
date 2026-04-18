@@ -41,3 +41,11 @@ The Lambda function checks each CloudTrail log file for specific events. In this
 When a login is detected, the system extracts useful details such as the username, IP address, region, and whether MFA was used.
 This helps to monitor account access and can be useful for identifying unusual or unauthorized login activity.
 
+
+
+ Results
+
+The system successfully detects console login events from CloudTrail logs in near real time.
+When a login occurs the Lambda function processes the log file and sends an alert through SNS to the configured email address.
+The alert includes key details such as the username, source IP address, region, and MFA status.
+This setup provides a simple but effective way to monitor account access and respond quickly to potential security events.
