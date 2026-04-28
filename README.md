@@ -42,7 +42,9 @@ The SNS topic ARN is not hardcoded and is passed as an environment variable
 
 ## Sample Alert
 
+<img width="1179" height="1838" alt="secure alert" src="https://github.com/user-attachments/assets/714ae59c-6fd3-45c8-a00f-81c7c2a3bf4b" />
 
+<img width="1179" height="2293" alt="secure-alert2 png" src="https://github.com/user-attachments/assets/a11239fb-50db-409f-a184-6e2ce229893b" />
 
 The alert comes a few minutes after a login and shows the username, IP address, region, MFA status and time.
 
@@ -55,7 +57,8 @@ Run aws configure to set your credentials
 
 Create a terraform.tfvars file
 
-alert_email = "abrahamsheye1@gmail.com"
+alert_email = abrahamsheye1@gmail.com
+
 project_name = "cloudtrail-security"
 
 Run
