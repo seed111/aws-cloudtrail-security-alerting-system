@@ -1,4 +1,5 @@
 .terraform/
 *.tfstate
-*.tfstate.*
-crash.log
+*.tfstate.backup
+terraform.tfvars
+lambda_function.zip 
