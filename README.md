@@ -57,9 +57,9 @@ Run aws configure to set your credentials
 
 Create a terraform.tfvars file
 
-alert_email = abrahamsheye1@gmail.com
+alert-email = abrahamsheye1@gmail.com
 
-project_name = "cloudtrail-security"
+project-name = "cloudtrail-security"
 
 Run
 
