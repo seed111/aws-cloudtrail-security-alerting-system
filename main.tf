@@ -1,8 +1,10 @@
-provider "aws" {
-  region = var.aws_region
-}
-
 terraform {
+  backend "s3" {
+    bucket = "cloudtrail-terraform-state-abraham"
+    key    = "cloudtrail/terraform.tfstate"
+    region = "eu-north-1"
+  }
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -17,6 +19,10 @@ terraform {
       version = "~> 2.0"
     }
   }
+}
+
+provider "aws" {
+  region = var.aws_region
 }
 
 resource "random_id" "suffix" {
