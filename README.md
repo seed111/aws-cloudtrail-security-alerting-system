@@ -74,7 +74,7 @@ CloudTrail → S3 → Lambda → SNS → Email alert
 
 - AWS CloudTrail
 - Amazon S3
-- AWS Lambda (Python 3.12)
+- AWS Lambda Python 3.12
 - Amazon SNS
 - AWS IAM
 - Terraform
