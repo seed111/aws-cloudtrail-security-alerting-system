@@ -109,8 +109,8 @@ Terraform and the AWS CLI need to be installed before starting.
 2. Run aws configure and enter your AWS credentials
 3. Create a terraform.tfvars file with your details:
 
-alert_email  = "your@email.com"
-project_name = "cloudtrail-security"
+alert_email  = abrahamsheye1@gmail.com
+project_name = cloudtrail-security
 
 4. Run:
 
