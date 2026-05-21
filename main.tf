@@ -2,7 +2,7 @@ terraform {
   backend "s3" {
     bucket = "cloudtrail-terraform-state-abraham"
     key    = "cloudtrail/terraform.tfstate"
-    region = "eu-north-1"
+    region = "eu-west-1"
   }
 
   required_providers {
