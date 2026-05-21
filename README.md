@@ -1,4 +1,4 @@
-# AWS CloudTrail Security Alerting System
+## AWS CloudTrail Security Alerting System
 
 This project monitors an AWS account and sends email alerts whenever someone logs into the console. The live infrastructure can be deployed from scratch in under five minutes using Terraform and torn down just as easily to avoid unnecessary AWS costs.
 
